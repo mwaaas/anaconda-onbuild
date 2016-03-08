@@ -1,5 +1,9 @@
 from continuumio/anaconda:latest
 
+RUN apt-get --yes  install gcc
+
+RUN pip install pylab plot
+
 RUN mkdir -p /usr/src/app
 
 WORKDIR /usr/src/app
